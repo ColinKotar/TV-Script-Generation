@@ -342,21 +342,20 @@ def generate_script(gen_length=200, prime_word='moe_szyslak'):
 
         print(tv_script)
 
-def run_test(run=False):
+def run_test():
 
-    if run:
-        import problem_unittests as t
+    import problem_unittests as t
 
-        t.test_create_lookup_tables(create_lookup_tables)
-        t.test_get_batches(get_batches)
-        t.test_tokenize(token_lookup)
-        t.test_get_inputs(get_inputs)
-        t.test_get_init_cell(get_init_cell)
-        t.test_get_embed(get_embed)
-        t.test_build_rnn(build_rnn)
-        t.test_build_nn(build_nn)
-        t.test_get_tensors(get_tensors)
-        t.test_pick_word(pick_word)
+    t.test_create_lookup_tables(create_lookup_tables)
+    t.test_get_batches(get_batches)
+    t.test_tokenize(token_lookup)
+    t.test_get_inputs(get_inputs)
+    t.test_get_init_cell(get_init_cell)
+    t.test_get_embed(get_embed)
+    t.test_build_rnn(build_rnn)
+    t.test_build_nn(build_nn)
+    t.test_get_tensors(get_tensors)
+    t.test_pick_word(pick_word)
 
 
 if __name__ == '__main__':
