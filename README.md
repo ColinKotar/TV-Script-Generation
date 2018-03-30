@@ -1,87 +1,41 @@
-# Project Title
+# TV-Script-Generation
 
-One Paragraph of project description goes here
+A Recurrent Neural Network (RNN) with Long Short Term Memory (LSTM) cells produces a made up TV script for an upcoming "episode". It learns the structure of how to write a TV script as well as how lines are spoken in broken English but, sometimes in perfect English. The dataset used is The Simpsons, but only a small portion of the 600 episodes available on Kaggle.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Simply run the Jupyter Notebook dlnd_tv_script_generation.ipynb or you can run the script tv_script_generation.py
+
+```
+python tv_script_generation.py
+```
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You can install the required packages through Anaconda's environment manager using the machine-learning.yml file
 
 ```
-Give examples
+conda env create -f machine-learning.yml
 ```
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Then, activate the environment and run tv_script_generation.py
 
 ```
-Give the example
+activate machine-learning
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Otherwise, check out the machine-learning.yml file for dependencies and their versions
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Simply add test cases to problem_unittests.py or run it
 
 ```
-Give an example
+python problem_unittests.py
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* [TensorFlow](https://www.tensorflow.org/install/install_windows) - The machine learning framework
+* [Anaconda](https://repo.continuum.io/archive/Anaconda3-5.1.0-Windows-x86_64.exe) - The environment manager
+* [Jupyter Notebook](http://jupyter.org/install) - The code documentation
