@@ -47,7 +47,6 @@ Temporary Items
 .apdisk
 
 # datasets + related
-/data
 /__pycache__
 *.ipynb_checkpoints
 *.meta
